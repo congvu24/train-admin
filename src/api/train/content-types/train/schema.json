@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trains",
+  "info": {
+    "singularName": "train",
+    "pluralName": "trains",
+    "displayName": "Train"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  }
+}
