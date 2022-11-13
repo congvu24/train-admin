@@ -2,9 +2,13 @@ const path = require('path');
 
 module.exports = ({ env }) => ({
   connection: {
-    client: 'sqlite',
+    client: 'postgres',
     connection: {
-      filename: path.join(__dirname, '..', env('DATABASE_FILENAME', '.tmp/data.db')),
+      host: env('DB_HOST', '127.0.0.1'),
+      port: env.int('DB_PORT', 5432),
+      database: env('DB_NAME', 'strapi'),
+      user: env('DB_USER', 'strapi'),
+      password: env('DB_PASSWORD', 'strapi'),
     },
     useNullAsDefault: true,
   },
