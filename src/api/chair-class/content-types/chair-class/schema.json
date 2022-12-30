@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chair_classes",
+  "info": {
+    "singularName": "chair-class",
+    "pluralName": "chair-classes",
+    "displayName": "Chair class",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "price": {
+      "type": "float",
+      "required": true,
+      "min": 0
+    }
+  }
+}

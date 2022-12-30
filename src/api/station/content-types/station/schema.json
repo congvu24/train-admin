@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "trains",
+  "collectionName": "stations",
   "info": {
-    "singularName": "train",
-    "pluralName": "trains",
-    "displayName": "Train",
+    "singularName": "station",
+    "pluralName": "stations",
+    "displayName": "Station",
     "description": ""
   },
   "options": {
@@ -16,19 +16,13 @@
       "type": "string",
       "required": true
     },
-    "trainCode": {
+    "stationCode": {
       "type": "string",
       "required": true,
       "unique": true
     },
     "description": {
       "type": "text"
-    },
-    "Chair": {
-      "displayName": "train-chairs",
-      "type": "component",
-      "repeatable": true,
-      "component": "train-chairs.train-chairs"
     }
   }
 }

@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_train_chairs_train_chairs",
+  "info": {
+    "displayName": "train-chairs",
+    "icon": "chair",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "chair_class": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::chair-class.chair-class",
+      "private": true
+    },
+    "quantity": {
+      "type": "integer",
+      "min": 0,
+      "required": true
+    },
+    "price": {
+      "type": "float"
+    }
+  }
+}

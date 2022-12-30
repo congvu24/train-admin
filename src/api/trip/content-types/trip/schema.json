@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "trips",
+  "info": {
+    "singularName": "trip",
+    "pluralName": "trips",
+    "displayName": "Trip",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "startDate": {
+      "type": "datetime",
+      "required": true
+    },
+    "endDate": {
+      "type": "datetime",
+      "required": true
+    },
+    "startStation": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::station.station"
+    },
+    "endStation": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::station.station"
+    },
+    "train": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::train.train"
+    },
+    "tripCode": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    }
+  }
+}
